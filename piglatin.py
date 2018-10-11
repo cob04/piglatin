@@ -12,3 +12,7 @@ class Stack:
     def peek(self):
         """Peek (look) at the top item on the stack."""
         return self._items[len(self._items) - 1]
+
+    def pop(self):
+        """Pop the pop item from the stack."""
+        return self._items.pop()
