@@ -16,3 +16,7 @@ class Stack:
     def pop(self):
         """Pop the pop item from the stack."""
         return self._items.pop()
+
+    def is_empty(self):
+        """Check if the stack is empty."""
+        return len(self._items) == 0

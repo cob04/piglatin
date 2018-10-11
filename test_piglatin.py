@@ -43,7 +43,7 @@ class StackTests(unittest.TestCase):
         s = Stack()
         self.assertTrue(s.is_empty())
         s.push("A")
-        self.assrtFalse(s.is_empty())
+        self.assertFalse(s.is_empty())
 
 
 
