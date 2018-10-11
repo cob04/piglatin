@@ -38,6 +38,13 @@ class StackTests(unittest.TestCase):
         self.assertEqual(s.pop(), "C")
         self.assertEqual(s.peek(), "B")
 
+    def test_checking_if_a_stack_is_empty(self):
+        """Test the is_empty method checks for the emptyness of a stack."""
+        s = Stack()
+        self.assertTrue(s.is_empty())
+        s.push("A")
+        self.assrtFalse(s.is_empty())
+
 
 
 if __name__ == "__main__":
