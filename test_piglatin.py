@@ -46,9 +46,21 @@ class StackTests(unittest.TestCase):
         self.assertFalse(s.is_empty())
 
     def test_getting_the_size_of_the_stack(self):
+        """Test the size method returns the number of items in the stack."""
         s = Stack()
         s.push("A")
         self.assertEqual(s.size(), 1)
+
+
+class PigLatinConverterTests(unittest.TestCase):
+
+    def test_converting_words_begining_with_consonants(self):
+        self.assertEqual(pig_latin_converter("will"), "illway")
+        self.assertEqual(pig_latin_conterter("dog"), "ogday")
+
+    def test_converting_words_begining_with_vowels(self):
+        self.assertEqual(pig_latin_converter("andela"), "andelaway")
+        self.assertEqual(pig_latin_converter("electrician"), "electricianway")
 
 
 if __name__ == "__main__":
