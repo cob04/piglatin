@@ -24,3 +24,8 @@ class Stack:
     def size(self):
         """Return the size of the stack."""
         return len(self._items)
+
+
+def pig_latin_converter(word):
+    """Convert english words to pig latin."""
+    pass

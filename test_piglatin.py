@@ -2,6 +2,7 @@
 
 import unittest
 
+from piglatin import pig_latin_converter
 from piglatin import Stack
 
 
