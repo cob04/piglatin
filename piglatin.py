@@ -20,3 +20,7 @@ class Stack:
     def is_empty(self):
         """Check if the stack is empty."""
         return len(self._items) == 0
+
+    def size(self):
+        """Return the size of the stack."""
+        return len(self._items)
