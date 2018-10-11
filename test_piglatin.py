@@ -21,6 +21,11 @@ class StackTests(unittest.TestCase):
         self.stack.push("A")
         self.assertIn("A", self.stack._items)
 
+    def test_peeking_at_the_top_of_the_stack(self):
+        """Test the peek method returns the top item on the stack."""
+        self.stack.push("B")
+        self.assertEqual(self.stack.peek(), "B")
+
 
 if __name__ == "__main__":
         unittest.main(warnings="ignore")
