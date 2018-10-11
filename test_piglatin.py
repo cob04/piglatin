@@ -19,7 +19,7 @@ class StackTests(unittest.TestCase):
     def test_pushing_item_to_stack(self):
         """Test the push method of our stack adds a new item to the list."""
         self.stack.push("A")
-        self.assertIn(self.stack_items, "A")
+        self.assertIn("A", self.stack._items)
 
 
 if __name__ == "__main__":
