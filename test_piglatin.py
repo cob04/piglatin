@@ -45,6 +45,10 @@ class StackTests(unittest.TestCase):
         s.push("A")
         self.assertFalse(s.is_empty())
 
+    def test_getting_the_size_of_the_stack(self):
+        s = Stack()
+        s.push("A")
+        self.assertEqual(s.size(), 1)
 
 
 if __name__ == "__main__":
