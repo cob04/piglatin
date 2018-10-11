@@ -16,6 +16,11 @@ class StackTests(unittest.TestCase):
         """
         self.assertEqual(self.stack._items, [])
 
+    def test_pushing_item_to_stack(self):
+        """Test the push method of our stack adds a new item to the list."""
+        self.stack.push("A")
+        self.assertIn(self.stack_items, "A")
+
 
 if __name__ == "__main__":
         unittest.main(warnings="ignore")
