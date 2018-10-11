@@ -26,6 +26,14 @@ class StackTests(unittest.TestCase):
         self.stack.push("B")
         self.assertEqual(self.stack.peek(), "B")
 
+    def test_popping_an_item_from_the_stack(self):
+        """Test the pop method removes the top item from the stack
+        and returns it.
+        """
+        self.assertEqual(self.stack.pop(), "B")
+        self.assertEqual(self.stack.peek(), "A")
+
+
 
 if __name__ == "__main__":
         unittest.main(warnings="ignore")
