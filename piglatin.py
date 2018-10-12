@@ -28,4 +28,23 @@ class Stack:
 
 def pig_latin_converter(word):
     """Convert english words to pig latin."""
-    pass
+    vowels = {"a", "e", "i", "o", "u"}
+    stack = Stack()
+    consonant_word = ''
+    
+    for char in word:
+        if char not in vowels:
+            stack.push(char)
+        else:
+            break
+
+
+    if stack.is_empty():
+        return word + 'way'
+    
+    consonant_word = word[stack.size():]
+
+    while not stack.is_empty():
+        consonant_word += stack.pop()
+
+    return  consonant_word + 'ay'

@@ -57,7 +57,7 @@ class PigLatinConverterTests(unittest.TestCase):
 
     def test_converting_words_begining_with_consonants(self):
         self.assertEqual(pig_latin_converter("will"), "illway")
-        self.assertEqual(pig_latin_conterter("dog"), "ogday")
+        self.assertEqual(pig_latin_converter("dog"), "ogday")
 
     def test_converting_words_begining_with_vowels(self):
         self.assertEqual(pig_latin_converter("andela"), "andelaway")
