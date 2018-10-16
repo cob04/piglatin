@@ -1,4 +1,10 @@
 # piglatin.py
+"""Returns an english word coveted into pig latin.
+usage:
+    python piglatin <english_word>
+"""
+import sys
+
 
 class Stack:
     """A class implementation of the Stack data structure."""
@@ -48,3 +54,11 @@ def pig_latin_converter(word):
         consonant_word += stack.pop()
 
     return  consonant_word + 'ay'
+
+
+def main(word):
+    print(pig_latin_converter(word))
+
+
+if __name__ == "__main__":
+    main(sys.argv[1])
